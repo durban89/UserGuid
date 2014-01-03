@@ -97,6 +97,17 @@
     // 在滚动超过页面宽度的50%的时候，切换到新的页面
     int page = floor((_pageScroll.contentOffset.x + pageWidth/2)/pageWidth) ;
     _pageControl.currentPage = page;
+    
+    
+    //这里可以判断是否跳转到主页
+//    if (page >= 3)
+//    {
+//        //点击登陆按钮后切换到storyboard界面
+//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboardIOS7Iphone5" bundle:nil];
+//        [self presentViewController:[storyboard instantiateInitialViewController]
+//                           animated:YES
+//                         completion:nil];
+//    }
 }
 
 - (IBAction)PageValueChange:(id)sender
